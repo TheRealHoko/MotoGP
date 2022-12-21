@@ -1,0 +1,10 @@
+:root {
+    --Primary: red;
+    --Secondary: blue;
+    --Third: yellow;
+    --Fourth: green;
+    --Accent: #4285F4;
+
+    --Dark: black;
+    --Light: white;
+}

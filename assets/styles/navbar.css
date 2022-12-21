@@ -1,0 +1,26 @@
+.logoHeader {
+    width: 139px;
+    height: 55px;
+}
+
+.navLinks {
+    background-color: var(--Dark);
+    list-style: none;
+}
+
+.navLinks li {
+    display: inline-flex;
+    justify-content: center;
+    color: var(--Primary);
+}
+
+.navLinks li a {
+    color: var(--Light);
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+.navLinks li a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: var(--Light);
+}

@@ -1,0 +1,27 @@
+@import url('colors.css');
+@import url('loginForm.css');
+@import url('navbar.css');
+@import url('footer.css');
+
+* {
+    font-family: Roboto;
+}
+
+body {
+    width: auto;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--Dark);
+}
+
