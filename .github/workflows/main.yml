@@ -11,7 +11,6 @@ jobs:
         root: .
         
     - uses: actions/upload-artifact@v3
-    - name: Logs
       with:
         name: log
         path: log.log
