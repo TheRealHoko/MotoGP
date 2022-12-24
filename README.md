@@ -13,7 +13,7 @@ d'avoir une police dédiée aux titres, ainsi qu'une autre police dediée aux te
 Au minimum 2 polices doivent être utilisées dans ce projet.
 
 # Resources
-https://medium.com/before-semicolon/50-css-best-practices-guidelines-to-write-better-css-c60807e9eee2
-https://developer.mozilla.org/
-https://devrix.com/tutorial/how-to-use-figma-website-design/
+https://medium.com/before-semicolon/50-css-best-practices-guidelines-to-write-better-css-c60807e9eee2 \
+https://developer.mozilla.org/ \
+https://devrix.com/tutorial/how-to-use-figma-website-design/ \
 https://www.w3schools.com/css/default.asp
