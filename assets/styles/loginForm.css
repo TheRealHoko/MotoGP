@@ -35,3 +35,9 @@
 .loginParameters {
     width: 50%;
 }
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
