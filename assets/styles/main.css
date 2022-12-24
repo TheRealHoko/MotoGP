@@ -1,0 +1,29 @@
+@import url('colors.css');
+@import url('navbar.css');
+@import url('footer.css');
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+h2, h3, p, a {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    width: auto;
+    margin: 0 auto;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--Dark);
+}
+
