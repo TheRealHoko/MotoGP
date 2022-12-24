@@ -1,3 +1,5 @@
 footer {
     background-color: var(--Accent);
+    border-width: 2rem;
+    border-radius: 32px;
 }
