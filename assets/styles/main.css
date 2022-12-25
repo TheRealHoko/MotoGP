@@ -13,6 +13,7 @@ h2, h3, p, a, table {
 body {
     width: auto;
     margin: 0 auto;
+    background-color: var(--Light);
 }
 
 header {
@@ -20,4 +21,3 @@ header {
     justify-content: space-between;
     background-color: var(--Dark);
 }
-
