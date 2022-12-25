@@ -6,7 +6,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
 article {
@@ -15,13 +14,29 @@ article {
     align-items: center;
     flex-direction: column;
     max-width: 500px;
-    border: 1px solid var(--Dark);
+    border: 5px solid var(--Dark);
     border-radius: 10%;
     margin: 1rem;
     filter: drop-shadow(0px 12px 60px rgba(0, 0, 0, 0.1));
     background-color: var(--Light);
 }
 
+article > img {
+    border-top: 5px solid var(--Dark);
+    border-bottom: 5px solid var(--Dark);
+    max-width: 100%;
+}
+
+article > h2 {
+    text-align: center;
+    margin: 1rem;
+}
+
 article > p {
     margin: 1rem;
+}
+
+table, th, td {
+    border: 1px solid var(--Dark);
+    border-spacing: 0;
 }
