@@ -1,5 +1,5 @@
 @import url('colors.css');
-@import url('navbar.css');
+@import url('header.css');
 @import url('footer.css');
 
 h1 {
@@ -16,10 +16,20 @@ body {
     width: auto;
     margin: 0 auto;
     background-color: var(--Light);
+    max-width: 1480px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: var(--Dark);
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 header {
     display: flex;
     justify-content: space-between;
-    background-color: var(--Dark);
+    background-color: transparent;
 }

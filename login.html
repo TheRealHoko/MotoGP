@@ -5,27 +5,25 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="Page de connexion MotorSports" name="description">
     <title>Connexion</title>
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
-    <link rel="stylesheet" href="assets/styles/main.css">
-    <link rel="stylesheet" href="assets/styles/loginForm.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="assets/images/favicon.png" rel="icon" type="image/x-icon">
+    <link href="assets/styles/main.css" rel="stylesheet">
+    <link href="assets/styles/loginForm.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap"
+          rel="stylesheet">
 </head>
 
 <body>
 <header>
-    <img alt="Logo Motorsport" class="logoHeader" src="assets/images/logoMotorsport.jpg">
+    <img alt="logo MotoGP" class="logoHeader" src="../assets/images/logoMotogpWhite.svg">
     <nav>
         <ul class="navLinks">
             <li>
-                <a href="index.html">Accueil</a>
+                <a class="buttonHome" href="./index.html">Accueil</a>
             </li>
             <li>
-                <a href="login.html">Connexion</a>
-            </li>
-            <li>
-                <a href="register.html">Inscription</a>
+                <a class="buttonMySpace" href="./login.html">Mon espace</a>
             </li>
         </ul>
     </nav>
@@ -33,23 +31,25 @@
 
 <main>
     <form class="loginForm">
-        <div class="loginTitle">
-            <h1>Connexion</h1>
+        <div>
+            <img alt="logo MotoGP" class="loginLogo" src="../assets/images/logoMotogpBlack.svg">
         </div>
 
-        <div class="loginParameters">
-            <label for="email"><b>Email</b></label>
-            <input id="email" name="email" placeholder="Ex: johndoe@domain.com" type="email">
-        </div>
+        <div class="loginParentParameters">
+            <div class="loginParameters">
+                <label for="email"><b>Email</b></label>
+                <input id="email" name="email" placeholder="Ex: johndoe@domain.com" type="email">
+            </div>
 
-        <div class="loginParameters">
-            <label for="password"><b>Password</b></label>
-            <input id="password" name="password" type="password">
+            <div class="loginParameters">
+                <label for="password"><b>Password</b></label>
+                <input id="password" name="password" placeholder="Mot de passe" type="password">
+            </div>
         </div>
 
         <div class="loginButton">
-            <button name="email" type="submit">Connexion</button>
-            <a href="register.html">S'inscrire</a>
+            <button class="firstLoginButton" name="email" type="submit">Connexion</button>
+            <a class="secondRegisterButton" href="register.html">S'inscrire</a>
         </div>
     </form>
 </main>
