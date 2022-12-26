@@ -15,17 +15,25 @@
 
 <body>
 <header>
+<<<<<<< HEAD:login.html
     <img alt="Logo Motorsport" class="logoHeader" src="assets/images/logoMotorsport.jpg">
+=======
+    <img alt="logo MotoGP" class="logoHeader" src="../assets/images/logoMotogpWhite.svg">
+>>>>>>> 553fc17 (update):templates/login.html
     <nav>
         <ul class="navLinks">
             <li>
-                <a href="index.html">Accueil</a>
+                <a class="buttonHome" href="./index.html">Accueil</a>
             </li>
             <li>
+<<<<<<< HEAD:login.html
                 <a href="login.html">Connexion</a>
             </li>
             <li>
                 <a href="register.html">Inscription</a>
+=======
+                <a class="buttonMySpace" href="./login.html">Mon espace</a>
+>>>>>>> 553fc17 (update):templates/login.html
             </li>
         </ul>
     </nav>
@@ -33,23 +41,25 @@
 
 <main>
     <form class="loginForm">
-        <div class="loginTitle">
-            <h1>Connexion</h1>
+        <div>
+            <img alt="logo MotoGP" class="loginLogo" src="../assets/images/logoMotogpBlack.svg">
         </div>
 
-        <div class="loginParameters">
-            <label for="email"><b>Email</b></label>
-            <input id="email" name="email" placeholder="Ex: johndoe@domain.com" type="email">
-        </div>
+        <div class="loginParentParameters">
+            <div class="loginParameters">
+                <label for="email"><b>Email</b></label>
+                <input id="email" name="email" placeholder="Ex: johndoe@domain.com" type="email">
+            </div>
 
-        <div class="loginParameters">
-            <label for="password"><b>Password</b></label>
-            <input id="password" name="password" type="password">
+            <div class="loginParameters">
+                <label for="password"><b>Password</b></label>
+                <input id="password" name="password" placeholder="Mot de passe" type="password">
+            </div>
         </div>
 
         <div class="loginButton">
-            <button name="email" type="submit">Connexion</button>
-            <a href="register.html">S'inscrire</a>
+            <button class="firstLoginButton" name="email" type="submit">Connexion</button>
+            <a class="secondRegisterButton" href="register.html">S'inscrire</a>
         </div>
     </form>
 </main>

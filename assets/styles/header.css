@@ -1,10 +1,13 @@
 .logoHeader {
-    width: 139px;
-    height: 55px;
+    width: 70px;
+    height: 70px;
+}
+
+header nav {
+    background-color: transparent;
 }
 
 .navLinks {
-    background-color: var(--Dark);
     list-style: none;
 }
 

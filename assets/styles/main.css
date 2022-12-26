@@ -1,5 +1,10 @@
 @import url('colors.css');
+<<<<<<< HEAD:assets/styles/main.css
 @import url('navbar.css');
+=======
+@import url('loginForm.css');
+@import url('header.css');
+>>>>>>> 553fc17 (update):assets/styles/style.css
 @import url('footer.css');
 
 h1 {
@@ -14,12 +19,26 @@ h2, h3, p, a, table {
 
 body {
     width: auto;
+<<<<<<< HEAD:assets/styles/main.css
     margin: 0 auto;
     background-color: var(--Light);
+=======
+    max-width: 1480px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: var(--Dark);
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+>>>>>>> 553fc17 (update):assets/styles/style.css
 }
 
 header {
     display: flex;
     justify-content: space-between;
-    background-color: var(--Dark);
+    background-color: transparent;
+
 }
