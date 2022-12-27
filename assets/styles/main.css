@@ -2,12 +2,18 @@
 @import url('header.css');
 @import url('footer.css');
 
+:root {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    --mobile: 767px;
+}
+
 h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
 
-h2, h3, p, a, table {
+h2, h3, p, a, table, button {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 400;
 }
@@ -18,7 +24,6 @@ body {
     margin: auto;
     padding: 0 20px;
     background-color: var(--Dark);
-    margin: auto;
 }
 
 header {

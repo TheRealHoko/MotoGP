@@ -2,7 +2,8 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5rem;
+    gap: 12rem;
+    margin: 0;
 }
 
 #logo {
@@ -23,10 +24,18 @@ section {
     height: 500px;
 
     border-radius: 32px;
-
-    flex: none;
     order: 1;
-    flex-grow: 0;
+}
+
+@media screen and (max-width: 1600px) {
+    section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 25px;
+        height: 500px;
+    }
 }
 
 article {
@@ -37,34 +46,43 @@ article {
     gap: 10px;
     width: 500px;
     height: 500px;
-
     background: #DDDDDD;
-
     box-shadow: 0px 12px 100px rgba(255, 255, 255, 0.1);
     border-radius: 32px;
 }
 
+@media screen and (max-width: 1600px) {
+    article {
+        max-width: 100%;
+    }
+}
+
 article > img {
     max-width: 100%;
+    border-radius: 32px;
+}
+
+article > h2 {
+    text-align: start;
+    margin: 1rem;
+}
+
+article > p {
+    margin: 1rem;
 }
 
 #article1 {
-    flex: none;
     order: 0;
-    flex-grow: 0;
+
 }
 
 #article2 {
-    flex: none;
     order: 1;
     align-self: stretch;
-    flex-grow: 0;
 }
 
 #article3 {
-    flex: none;
     order: 2;
-    flex-grow: 0;
 }
 
 button {
@@ -74,67 +92,36 @@ button {
     align-items: center;
     padding: 10px 24px;
     gap: 10px;
-    
     width: 555px;
     height: 111px;
-    
-    /* Global Gradient */
-    
     background: linear-gradient(102.03deg, #BF1A4C 0%, #BF1A4C 0.01%, #3523CA 100%);
     box-shadow: 0px 12px 100px rgba(255, 255, 255, 0.15);
     border-radius: 16px;
     border: none;
-    
-    /* Inside auto layout */
-    
-    flex: none;
     order: 1;
-    flex-grow: 0;
-}
-
-button > p {
+    transition: all 0.5s ease-in-out;
     font-weight: 700;
     font-size: 32px;
     color: #FFFFFF;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-}
-/* main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
-article {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    max-width: 500px;
-    border: 5px solid var(--Dark);
-    border-radius: 10%;
-    margin: 1rem;
-    filter: drop-shadow(0px 12px 60px rgba(0, 0, 0, 0.1));
-    background-color: var(--Light);
+button:hover {
+    transform: scale(1.2,1.2);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
 }
 
-article > img {
-    border-top: 5px solid var(--Dark);
-    border-bottom: 5px solid var(--Dark);
-    max-width: 100%;
+button:hover ~ table{
+    display: block;
+    background-color: #FFFFFF;
 }
 
-article > h2 {
-    text-align: center;
-    margin: 1rem;
-}
-
-article > p {
-    margin: 1rem;
+table {
+    display: none;
 }
 
 table, th, td {
     border: 1px solid var(--Dark);
     border-spacing: 0;
-} */
+    order: 2;
+}
