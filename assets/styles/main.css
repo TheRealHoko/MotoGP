@@ -16,15 +16,8 @@ h2, h3, p, a, table {
 body {
     width: auto;
     max-width: 1480px;
-    margin: 0 auto;
     padding: 0 20px;
     background-color: var(--Dark);
-}
-
-main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 header {

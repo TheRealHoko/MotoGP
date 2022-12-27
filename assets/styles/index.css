@@ -1,8 +1,83 @@
-.indexTitle {
-    text-align: center;
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 64px;
+    position: absolute;
+    width: 1440px;
+    height: 814px;
+    left: 20px;
+    top: 212px;
+    border-radius: 32px;
 }
 
-main {
+#logo {
+    width: 250px;
+    height: 250px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 25px;
+    
+    width: 1440px;
+    height: 500px;
+    
+    border-radius: 32px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    
+    width: 463.33px;
+    height: 500px;
+    
+    background: #DDDDDD;
+    
+    box-shadow: 0px 12px 100px rgba(255, 255, 255, 0.1);
+    border-radius: 32px;
+}
+
+article > img {
+    max-width: 100%;
+}
+
+#article1 {
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+#article2 {
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+#article3 {
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+/* main {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,4 +114,4 @@ article > p {
 table, th, td {
     border: 1px solid var(--Dark);
     border-spacing: 0;
-}
+} */
