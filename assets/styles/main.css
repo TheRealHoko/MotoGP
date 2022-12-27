@@ -17,10 +17,20 @@ body {
     max-width: 1480px;
     padding: 0 20px;
     background-color: var(--Dark);
+    margin: auto;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     background-color: transparent;
+}
+
+.motogpGradient {
+    z-index: -1;
+    position: absolute;
+    right: 25%;
+    top: 12.5%;
+    filter: blur(350px);
+    -webkit-filter: blur(350px);
 }
