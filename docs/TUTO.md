@@ -1,3 +1,6 @@
+# Prérequis:
+- Git
+
 # Pour contribuer sur ce projet
 Pour l'instant on a que ça comme solution pour passer en revu le code donc on a opté pour un fork et PR.
 
