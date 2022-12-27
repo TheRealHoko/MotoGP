@@ -1,10 +1,10 @@
 # [MotoGP](https://therealhoko.github.io/MotoGP/index.html)
-Site Web pour le garage moto
+Site Web pour MotoGP
 
 ## [Trello](https://trello.com/b/DqUp04Q6/motorsports)
 Envoyez moi un message avec votre mail myges si vous n'avez pas accès
 
-## [Figma](https://www.figma.com/file/UaCQz321QCHOc0QePDhqSA/MotoGP?node-id=2%3A636&t=m0fOl39aR1EtBB7v-1)
+## [Figma](https://www.figma.com/file/UaCQz321QCHOc0QePDhqSA/MotoGP?node-id=49%3A306&t=Ano1FVzry3ODE43d-1)
 
 ## Criterias:
 
