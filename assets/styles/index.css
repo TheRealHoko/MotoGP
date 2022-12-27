@@ -20,7 +20,7 @@ section {
     padding: 0px;
     gap: 25px;
     height: 500px;
-    
+
     border-radius: 32px;
 
     flex: none;
@@ -35,12 +35,12 @@ article {
     align-items: center;
     padding: 0px;
     gap: 10px;
-    
+
     width: 463.33px;
     height: 500px;
-    
+
     background: #DDDDDD;
-    
+
     box-shadow: 0px 12px 100px rgba(255, 255, 255, 0.1);
     border-radius: 32px;
 }
