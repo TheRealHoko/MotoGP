@@ -9,6 +9,9 @@ header nav {
 
 .navLinks {
     list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .navLinks li {
@@ -18,12 +21,47 @@ header nav {
 }
 
 .navLinks li a {
-    color: var(--Light);
     text-decoration: none;
     transition: all 0.3s ease 0s;
 }
 
 .navLinks li a:visited, a:hover, a:active {
     text-decoration: none;
+}
+
+.buttonHome {
+    background: var(--Light);
+    padding: 5px 16px;
+    border-radius: 100px;
+    color: var(--Dark);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.buttonMySpace {
+    background: transparent;
+    border: 3px solid var(--Light);
+    padding: 5px 16px;
+    border-radius: 100px;
+    color: var(--Light);;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.buttonHome:hover {
+    background: var(--Primary);
     color: var(--Light);
+    filter: drop-shadow(0px 12px 100px rgba(255, 255, 255, 0.2));
+}
+
+.buttonMySpace:hover {
+    color: var(--Primary);;
+    border: 3px solid var(--Primary);
+    filter: drop-shadow(0px 12px 100px rgba(255, 255, 255, 0.2));
 }
