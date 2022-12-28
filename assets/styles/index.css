@@ -71,20 +71,6 @@ article > p {
     margin: 1rem;
 }
 
-#article1 {
-    order: 0;
-
-}
-
-#article2 {
-    order: 1;
-    align-self: stretch;
-}
-
-#article3 {
-    order: 2;
-}
-
 button {
     display: flex;
     flex-direction: row;
