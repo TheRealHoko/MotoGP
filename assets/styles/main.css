@@ -19,7 +19,6 @@ h2, h3, p, a, table, button {
 }
 
 body {
-    width: auto;
     max-width: 1480px;
     margin: auto;
     padding: 0 20px;
