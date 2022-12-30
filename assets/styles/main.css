@@ -25,12 +25,6 @@ body {
     background-color: var(--Dark);
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    background-color: transparent;
-}
-
 .motogpGradient {
     z-index: -1;
     position: absolute;

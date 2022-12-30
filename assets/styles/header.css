@@ -3,6 +3,12 @@
     height: 70px;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
 header nav {
     background-color: transparent;
 }
@@ -64,4 +70,18 @@ header nav {
     color: var(--Primary);;
     border: 3px solid var(--Primary);
     filter: drop-shadow(0px 12px 100px rgba(255, 255, 255, 0.2));
+}
+
+.mbuttonMySpace {
+    display: none;
+}
+
+@media screen and (max-width: 1600px) and (min-width: 320px){
+    .buttonMySpace {
+        display: none;
+    }
+    .mbuttonMySpace {
+        display: block;
+        padding: 5px 16px;
+    }
 }
