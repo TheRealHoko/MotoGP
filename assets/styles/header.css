@@ -1,6 +1,7 @@
 .logoHeader {
     width: 70px;
     height: 70px;
+    cursor: auto;
 }
 
 header {
@@ -76,10 +77,11 @@ header nav {
     display: none;
 }
 
-@media screen and (max-width: 1600px) and (min-width: 320px){
+@media screen and (max-width: 767px) {
     .buttonMySpace {
         display: none;
     }
+
     .mbuttonMySpace {
         display: block;
         padding: 5px 16px;
