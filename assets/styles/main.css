@@ -1,6 +1,7 @@
 @import url('colors.css');
 @import url('header.css');
 @import url('footer.css');
+@import url('fonts.css');
 
 :root {
     font-family: 'Roboto', sans-serif;
