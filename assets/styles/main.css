@@ -25,6 +25,16 @@ body {
     background-color: var(--Dark);
 }
 
+button {
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.1, 1.1);
+    transition: all 0.5s ease-in-out;
+}
+
 .motogpGradient {
     z-index: -1;
     position: absolute;

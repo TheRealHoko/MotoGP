@@ -7,75 +7,141 @@
     <title>Inscription</title>
     <link href="assets/images/logoMotogpWhite.svg" rel="icon" type="image/x-icon">
     <link href="assets/styles/main.css" rel="stylesheet">
+    <link href="assets/styles/register.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap"
           rel="stylesheet">
 </head>
 <body>
-<header>
-    <nav>
-        <ul>
-            <li>
-                <a href="index.html">Accueil</a>
-            </li>
-            <li>
-                <a href="login.html">Connexion</a>
-            </li>
-            <li>
-                <a href="register.html">Inscription</a>
-            </li>
-        </ul>
-    </nav>
-</header>
-<h1>Inscription</h1>
+    <header>
+        <a class="unselectable" href="index.html">
+            <img alt="logo MotoGP" class="logoHeader" src="assets/images/logoMotogpWhite.svg">
+        </a>
+        <nav>
+            <ul class="navLinks">
+                <li>
+                    <a class="buttonHome" href="index.html">Accueil</a>
+                </li>
+    
+                <li>
+                    <a class="mbuttonMySpace" href="login.html">
+                        <img alt="Mon espace" src="assets/icons/mbuttonMySpace.svg">
+                    </a>
+                    <a class="buttonMySpace" href="login.html">Mon espace</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+<main>
+    <form class="registerForm">
+        <div class="unselectable">
+            <img alt="logo MotoGP" class="registerLogo" src="assets/images/logoMotogpBlack.svg">
+        </div>
+        <div class="registerParentParameters">
+            <div class="registerParameters">
+                <label for="firstname"><b>Prénom</b></label>
+                <input id="firstname" name="firstname" placeholder="Giorno" type="text">
+            </div>
 
-<form>
-    <label for="firstname"><b>Prénom</b></label>
-    <input id="firstname" name="firstname" placeholder="Entre ton Prénom" type="text"><br>
+            <div class="registerParameters">
+                <label for="lastname"><b>Nom</b></label>
+                <input id="lastname" name="lastname" placeholder="Giovanna" type="text"><br>
+            </div>
+            <div class="registerParameters">
+                <label for="email"><b>Email</b></label>
+                <input id="email" name="email" placeholder="Giorno.Giovanna@jojo.jp" type="email"><br>
+            </div>
+            <div class="registerParameters">
+                <label for="password"><b>Mot de passe</b></label>
+                <input id="password" name="password" placeholder="**************" type="password"><br>
+            </div>
+            <div class="registerParameters">
+                <label for="password-conf"><b>Confirmation mot de passe</b></label>
+                <input id="password-conf" name="password-conf" placeholder="**************" type="password"><br>
+            </div>
+            <div class="registerParameters">
+                <label for="country">Pays :</label>
+                <select id="country" name="country">
+                    <option selected value="">--Veuillez choisir un pays--</option>
+                    <option value="FR">France</option>
+                    <option value="PO">Pologne</option>
+                    <option value="ES">Espagne</option>
+                    <option value="AL">Allemagne</option>
+                </select>
+            </div>
+            <div class="registerParameters">
+                <label for="cgv"></label><br>
+                <input id="cgv" name="cgv" type="checkbox"> J'accepte les conditions générales de ventes
+            </div>
 
-    <label for="lastname"><b>Nom</b></label>
-    <input id="lastname" name="lastname" placeholder="Entre ton Nom" type="text"><br>
-
-    <label for="password"><b>Mot de passe</b></label>
-    <input id="password" name="password" placeholder="Entre ton mdp" type="password"><br>
-
-    <label for="password-conf"><b>Confirmation mot de passe</b></label>
-    <input id="password-conf" name="password-conf" placeholder="Confirmation" type="password"><br>
-
-    <label for="email"><b>Email</b></label>
-    <input id="email" name="email" placeholder="Entre ton mail" type="email"><br>
-
-    <label for="country">Pays :</label>
-    <select id="country" name="country">
-        <option value="FR">France</option>
-        <option value="PO">Pologne</option>
-        <option value="ES">Espagne</option>
-        <option value="AL">Allemagne</option>
-    </select>
-    <label for="cgv"><br>
-        <input id="cgv" name="cgv" type="checkbox"> J'accepte les conditions générales de ventes
-    </label><br>
-
-    <button type="submit">Inscription</button>
-    <br>
-</form>
-
+            <div class="register">
+                <button class="registerButton" type="submit">Inscription</button><br>
+            </div>
+        </div>
+    </form>
+</main>
 <footer>
-    <h3>MotorSports</h3>
-    <p>Le site internet de ton garage moto sur-mesure.</p>
+    <div class="topFooter">
+        <div>
+            <a class="unselectable" href="index.html">
+                <img alt="logo MotoGP" class="logoFooter" src="assets/images/logoMotogpWhite.svg">
+            </a>
+        </div>
 
-    <ul>
-        <li>
-            <a href="https://www.linkedin.com/in/gregoire-decrouez-4aaa5b20a/" target="_blank">LinkedIn</a>
-        </li>
-        <li>
-            <a href="https://www.facebook.com" target="_blank">Facebook</a>
-        </li>
-        <li>
-            <a href="https://www.twitter.com" target="_blank">Twitter</a>
-        </li>
-    </ul>
+        <div>
+            <h3>Le site internet de ton garage moto sur-mesure.</h3>
+        </div>
+    </div>
+
+    <div class="ressources">
+        <div class="subRessources">
+            <h4>Plan du site</h4>
+            <div class="subRessourcesLink">
+                <a href="./index.html"><h5>Page d'accueil</h5></a>
+                <a href="./login.html"><h5>Connexion</h5></a>
+                <a href="./register.html"><h5>Inscription</h5></a>
+            </div>
+        </div>
+
+
+        <div class="social">
+            <a href="https://www.twitter.com" target="_blank">
+                <img alt="twitter icon" src="assets/icons/twitter.svg">
+            </a>
+
+            <a href="https://www.linkedin.com/in/doublemart/" target="_blank">
+                <img alt="linkedin icon" src="assets/icons/linkedIn.svg">
+            </a>
+
+            <a href="https://www.facebook.com" target="_blank">
+                <img alt="facebook icon" src="assets/icons/facebook.svg">
+            </a>
+        </div>
+
+        <div class="subRessources">
+            <h4>Contact</h4>
+
+            <div class="subRessourcesLink">
+                <a href="mailto:Contact@MotoGP.fr?">
+                    <h5>Contact@MotoGP.fr</h5>
+                </a>
+
+                <a href="https://www.google.com/maps/place/7+Chem.+de+Saint-Lambert,+13821+La+Penne-sur-Huveaune/@43.2884913,5.3426015,11z/data=!4m5!3m4!1s0x12c9bc62f9039055:0x3d6ef7bbbdddd099!8m2!3d43.2857071!4d5.5175977">
+                    <h5>7 Chemin de Saint Lambert - 13821</h5>
+                </a>
+
+                <a href="tel:0600000000">
+                    <h5>0600000000</h5>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="topBottom unselectable">
+        <h6>© Copyright MotoGP 2023</h6>
+    </div>
 </footer>
 </body>
 

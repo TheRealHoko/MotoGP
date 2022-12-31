@@ -104,6 +104,16 @@
     border: none;
 }
 
+.secondRegisterButton {
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.secondRegisterButton:hover {
+    transform: scale(1.1, 1.1);
+    transition: all 0.5s ease-in-out;
+}
+
 main {
     display: flex;
     align-items: center;
