@@ -14,25 +14,25 @@
           rel="stylesheet">
 </head>
 <body>
-    <header>
-        <a class="unselectable" href="index.html">
-            <img alt="logo MotoGP" class="logoHeader" src="assets/images/logoMotogpWhite.svg">
-        </a>
-        <nav>
-            <ul class="navLinks">
-                <li>
-                    <a class="buttonHome" href="index.html">Accueil</a>
-                </li>
-    
-                <li>
-                    <a class="mbuttonMySpace" href="login.html">
-                        <img alt="Mon espace" src="assets/icons/mbuttonMySpace.svg">
-                    </a>
-                    <a class="buttonMySpace" href="login.html">Mon espace</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <a class="unselectable" href="index.html">
+        <img alt="logo MotoGP" class="logoHeader" src="assets/images/logoMotogpWhite.svg">
+    </a>
+    <nav>
+        <ul class="navLinks">
+            <li>
+                <a class="buttonHome" href="index.html">Accueil</a>
+            </li>
+
+            <li>
+                <a class="mbuttonMySpace" href="login.html">
+                    <img alt="Mon espace" src="assets/icons/mbuttonMySpace.svg">
+                </a>
+                <a class="buttonMySpace" href="login.html">Mon espace</a>
+            </li>
+        </ul>
+    </nav>
+</header>
     
 <main>
     <img alt="MotoGP gradient" class="motogpGradient" src="assets/images/motogpGradient.svg">
@@ -41,40 +41,47 @@
             <img alt="logo MotoGP" class="registerLogo" src="assets/images/logoMotogpBlack.svg">
         </div>
         <div class="registerParentParameters">
-            <div class="registerParameters">
-                <label for="firstname"><b>Prénom</b></label>
-                <input id="firstname" name="firstname" placeholder="Giorno" type="text">
+            <div class="name">
+                <div class="registerParameters firstname">
+                    <label for="firstname"><b>Prénom</b></label>
+                    <input id="firstname" name="firstname" placeholder="Giorno" type="text">
+                </div>
+
+                <div class="registerParameters lastname">
+                    <label for="lastname"><b>Nom</b></label>
+                    <input id="lastname" name="lastname" placeholder="Giovanna" type="text">
+                </div>
             </div>
 
             <div class="registerParameters">
-                <label for="lastname"><b>Nom</b></label>
-                <input id="lastname" name="lastname" placeholder="Giovanna" type="text"><br>
-            </div>
-            <div class="registerParameters">
                 <label for="email"><b>Email</b></label>
-                <input id="email" name="email" placeholder="Giorno.Giovanna@jojo.jp" type="email"><br>
+                <input id="email" name="email" placeholder="Giorno.Giovanna@jojo.jp" type="email">
             </div>
+
             <div class="registerParameters">
                 <label for="password"><b>Mot de passe</b></label>
-                <input id="password" name="password" placeholder="**************" type="password"><br>
+                <input id="password" name="password" placeholder="**************" type="password">
             </div>
+
             <div class="registerParameters">
                 <label for="password-conf"><b>Confirmation mot de passe</b></label>
-                <input id="password-conf" name="password-conf" placeholder="**************" type="password"><br>
+                <input id="password-conf" name="password-conf" placeholder="**************" type="password">
             </div>
+
             <div class="registerParameters">
                 <label for="country">Pays :</label>
                 <select id="country" name="country">
                     <option selected value="">--Veuillez choisir un pays--</option>
                     <option value="FR">France</option>
-                    <option value="PO">Pologne</option>
-                    <option value="ES">Espagne</option>
-                    <option value="AL">Allemagne</option>
+                    <option value="PO">Japon</option>
+                    <option value="ES">Pologne</option>
+                    <option value="AL">Canada</option>
                 </select>
             </div>
-            <div class="registerParameters">
-                <label for="cgv"></label><br>
-                <input id="cgv" name="cgv" type="checkbox"> J'accepte les conditions générales de ventes
+
+            <div class="registerParameters cgv">
+                <input id="cgv" name="cgv" type="checkbox">
+                <label for="cgv">J'accepte les conditions générales de ventes</label>
             </div>
 
             <div class="register">
@@ -83,6 +90,7 @@
         </div>
     </form>
 </main>
+
 <footer>
     <div class="topFooter">
         <div>
