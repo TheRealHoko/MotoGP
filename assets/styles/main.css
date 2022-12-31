@@ -1,6 +1,7 @@
 @import url('colors.css');
 @import url('header.css');
 @import url('footer.css');
+@import url('fonts.css');
 
 :root {
     font-family: 'Roboto', sans-serif;
@@ -16,6 +17,26 @@ h1 {
 h2, h3, p, a, table, button {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 400;
+}
+
+label {
+    width: 100%;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 11px;
+    color: var(--Gray);
+}
+
+input {
+    width: 100%;
+    border: none;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 11px;
 }
 
 body {
