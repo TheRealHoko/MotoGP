@@ -62,10 +62,6 @@ article:hover > p {
     display: block;
 }
 
-article:hover > h2 {
-    bottom: 5em;
-}
-
 button {
     display: flex;
     flex-direction: row;
@@ -84,8 +80,6 @@ button {
     font-size: 32px;
     color: #FFFFFF;
 }
-
-
 
 button:hover ~ table {
     display: block;
@@ -123,20 +117,23 @@ th, td {
         max-width: 100%;
         height: auto;
         align-items: center;
+        position: relative;
+    }
+
+    article {
+        gap: 0;
     }
 
     article > h2 {
         display: block;
-        bottom: 5em;
-        height: auto;
-    }
-
-    article:hover > h2 {
-        cursor: none;
+        position: relative;
+        margin: 1rem 1rem 0 1rem;
     }
 
     article > p {
         display: block;
+        padding: 1px;
+        margin: 0 1rem 1rem 1rem;
     }
 
     table {
@@ -148,5 +145,11 @@ th, td {
     article > h2 {
         display: block;
         bottom: 20%;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    article:hover > h2 {
+        bottom: 5em;
     }
 }

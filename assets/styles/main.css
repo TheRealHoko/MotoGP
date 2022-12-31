@@ -4,13 +4,13 @@
 
 :root {
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     --mobile: 767px;
 }
 
 h1 {
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 h2, h3, p, a, table, button {
@@ -28,6 +28,7 @@ body {
 button {
     cursor: pointer;
     transition: all 0.5s ease-in-out;
+    max-width: 100%;
 }
 
 button:hover {
