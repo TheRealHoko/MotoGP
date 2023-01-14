@@ -17,6 +17,17 @@
 </head>
 
 <body>
+    <?php
+            $password = $_ENV["MYSQL_ROOT_PASSWORD"];
+
+            $pdo = new PDO('mysql:host=db;dbname=mysql', 'root', $password, [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
+
+            $query = $pdo->query('SHOW VARIABLES like "version"');
+
+            $row = $query->fetch();
+
+            echo 'MySQL version:' . $row['Value'];
+        ?>
 <header>
     <a class="unselectable" href="index.html">
         <img alt="logo MotoGP" class="logoHeader" src="assets/images/logoMotogpWhite.svg">

@@ -1,0 +1,31 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: php.dockerfile
+    volumes:
+      - ./web:/var/www/html
+    environment:
+      MYSQL_ROOT_PASSWORD: toor
+    ports:
+      - 80:80
+    depends_on:
+      - db
+    networks:
+      - webnet
+  db:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: toor
+    ports:
+      - 3306:3306
+    volumes:
+      - mydb:/var/lib/mysql
+    networks:
+      - webnet
+
+networks:
+  webnet:
+    driver: bridge
+volumes:
+  mydb:
